@@ -13,7 +13,7 @@ main {
   height: 100vh; 
   display: flex;  
   background-color: rgb(232, 237, 247);  
-  padding: 0 100px;
+  padding: 20px 100px;
   
 }
 
@@ -58,9 +58,9 @@ h2 {
 }
 
 .swap-block {
-  display: flex;
-  width: 50%;
-  justify-content: space-around;  
+  display: flex;  
+  justify-content: space-between; 
+  align-items: center;   
   margin-bottom: 5vh;
 }
 
@@ -68,7 +68,9 @@ h2 {
   color: white;
   font-size: 1.4rem;
   text-transform: uppercase;
-  padding: 10px 20px;
+  letter-spacing: 2px;
+  padding: 6px 10px;
+  margin-left: 50px;
   background-color: rgb(56, 143, 94);  
   border-radius: 5px;
   box-shadow: 3px 3px rgb(173, 172, 172);

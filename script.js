@@ -22,7 +22,7 @@ function calculate() {
       const rate = data.rates[currency_two];
       console.log(rate);      
       exchangeRate.innerText =  `1 ${currency_one} = ${rate} ${currency_two}`;
-      amount2El.value = (amount1El.value * rate).toFixed(2);
+      amount2El.value = (amount1El.value * rate);
     });
 }
 
@@ -32,6 +32,12 @@ amount1El.addEventListener("input", calculate);
 curr2Element.addEventListener("change", calculate);
 amount2El.addEventListener("input", calculate);
 
+swap.addEventListener('click', () => {
+    const remember = curr1Element.value;
+    curr1Element.value = curr2Element.value;
+    curr2Element.value = remember;
+    calculate();
+});
 
 
-calculate()
+calculate();
