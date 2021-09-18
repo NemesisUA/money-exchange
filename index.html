@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Exchanger</title>
   <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
 </head>
 <body>
   <main>
@@ -24,14 +25,14 @@
           <option value="RUB">RUB</option>
           <option value="PLN">PLN</option>
         </select>
-        <input type="number" id="amount1" autofocus  placeholder="1">
+        <input type="number" id="amount1" autofocus  placeholder="1" value="1">
         
       </div>
       </div>
 
       <div class="swap-block">
       <button class="swap-button">swap</button>
-      <h2 class="rate">rtyrt = fgfd</h2>
+      <h2 class="exchangeRate" id="exchangeRate"></h2>
       </div>
 
       <div class="container">
@@ -50,7 +51,6 @@
 
     <aside class="aside-right"></aside>
 
-  </main>
-  
+  </main>  
 </body>
 </html>
