@@ -9,32 +9,22 @@ html {
   font-size: 10px;
 }
 
-main { 
-  height: 100vh; 
-  display: flex;  
-  background-color: rgb(232, 237, 247);  
-  padding: 20px 100px;
+main {    
+  background-color: rgb(232, 237, 247);     
+  background-image: url(img/money-butterfly-blue.png);                
   
-}
-
-aside {
-  
-  flex-basis: 25%;
-  max-width: 450px;
-  /*background-color: rgb(228, 230, 228); */
-  background-color: rgb(232, 237, 247);  
-  background-image: url(img/money-butterfly.png);
-  background-repeat: space;
-  
-  background-size: contain;
+  background-size: 25%;
+  background-repeat: space;   
 }
 
 .exchange-block {
-  flex-basis: 50%;  
+  width: 50%;  
+  height: 100vh;  
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  background-color: rgb(232, 237, 247);
   margin: 0 auto;
 }
 
@@ -100,4 +90,15 @@ input {
   text-align: right;
   outline: none;  
   border: none;
+}
+
+@media screen and (max-width: 1200px) { 
+ 
+  .exchange-block {
+    width: 100%;
+    background-image: url(img/money-butterfly-blue.png) ;      
+    background-size: 25%;
+    background-repeat: repeat-x;       
+  }
+  
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
   <link rel="stylesheet" href="style.css">
   <script defer src="script.js"></script>
 </head>
+
 <body>
   <main>
     <aside class="aside-left"></aside>
@@ -17,40 +19,41 @@
       <h3>Choose the currency and the amount</h3>
 
       <div class="container">
-      <div class="currency">
-        <select name="" id="curr1">
-          <option value="USD">USD</option>
-          <option value="EUR">EUR</option>
-          <option value="UAH">UAH</option>
-          <option value="RUB">RUB</option>
-          <option value="PLN">PLN</option>
-        </select>
-        <input type="number" id="amount1" autofocus  placeholder="1" value="1">
-        
-      </div>
+        <div class="currency">
+          <select name="" id="curr1">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="UAH">UAH</option>
+            <option value="RUB">RUB</option>
+            <option value="PLN">PLN</option>
+          </select>
+          <input type="number" id="amount1" autofocus placeholder="1" value="1">
+
+        </div>
       </div>
 
       <div class="swap-block">
         <h2 class="exchangeRate" id="exchangeRate"></h2>
-        <button class="swap-button" id="swap-button">SWAP</button>      
+        <button class="swap-button" id="swap-button">SWAP</button>
       </div>
 
       <div class="container">
-      <div class="currensy">
-        <select name="" id="curr2">
-          <option value="USD">USD</option>
-          <option value="EUR">EUR</option>
-          <option value="UAH" selected>UAH</option>
-          <option value="RUB">RUB</option>
-          <option value="PLN">PLN</option>
-        </select>
-        <input type="number" id="amount2" placeholder="0">
+        <div class="currensy">
+          <select name="" id="curr2">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="UAH" selected>UAH</option>
+            <option value="RUB">RUB</option>
+            <option value="PLN">PLN</option>
+          </select>
+          <input type="number" id="amount2" placeholder="0">
+        </div>
       </div>
-      </div>      
     </section>
 
     <aside class="aside-right"></aside>
 
-  </main>  
+  </main>
 </body>
+
 </html>
